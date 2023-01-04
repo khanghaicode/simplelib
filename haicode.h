@@ -1,5 +1,6 @@
 //simple library by haicode
 //https://github.com/khanghaicode/simplelib
+//__________swap__________
 template<typename datatype>
 void haicode_swap(datatype&a,datatype&b){
     datatype c;
@@ -7,6 +8,7 @@ void haicode_swap(datatype&a,datatype&b){
     a=b;
     b=c;
 }
+//__________sort__________
 template<typename datatype>
 void haicode_sort(datatype *left,datatype *right){
     right--;

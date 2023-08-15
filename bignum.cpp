@@ -82,7 +82,7 @@ bignum chia(bignum x,bignum y){
     bignum nhany[10];
     nhany[0]="0";
     int k;
-    for(int i=1;i<10;i++)nhany[i]=nhany[i-1]+y;
+    for(int i=1;i<10;i++)nhany[i]=cong(nhany[i-1],y);
     for(int i=0;i<x.size();i++){
         tmp+=x[i];
         k=1;
@@ -98,7 +98,7 @@ bignum chiadu(bignum x,bignum y){
     bignum nhany[10];
     nhany[0]="0";
     int k;
-    for(int i=1;i<10;i++)nhany[i]=nhany[i-1]+y;
+    for(int i=1;i<10;i++)nhany[i]=cong(nhany[i-1],y);
     for(int i=0;i<x.size();i++){
         kq+=x[i];
         k=1;

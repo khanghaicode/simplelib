@@ -59,7 +59,7 @@ struct matrix{
         matrix tmp=(*this)^(x/2);
         matrix tmpp=tmp*tmp;
         if(x%2){  
-            tmp=(*this);
+            tmp=this->opp_nhu_lon();
             tmp=tmp*tmpp;
             tmpp.chet();
             return tmp;

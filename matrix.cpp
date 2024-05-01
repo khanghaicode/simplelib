@@ -46,7 +46,7 @@ struct matrix{
         }
         return ans;
     }
-    matrix operator^(int x){
+    matrix operator^(long long x){
         if(!x){       
             int lon=this->w;
             matrix ans(lon,lon);

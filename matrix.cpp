@@ -1,7 +1,9 @@
 struct matrix{
     int w,h;
     long long **ar;
-    matrix(){}
+    matrix(){
+        w=0;
+    }
     matrix(int hang,int cot){
         this->w=hang;
         this->h=cot;

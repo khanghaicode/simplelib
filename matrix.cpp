@@ -17,11 +17,11 @@ struct matrix{
     long long *operator[](int fuck){
         return ar[fuck];
     }
-    matrix opp_nhu_lon(matrix x){
-        matrix res(x.w,x.h);
-        for(int i=1;i<=x.w;i++){
-            for(int j=1;j<=x.h;j++){
-                res[i][j]=x[i][j];
+    matrix opp_nhu_lon(){
+        matrix res(this->w,this->h);
+        for(int i=1;i<=this->w;i++){
+            for(int j=1;j<=this->h;j++){
+                res[i][j]=this->ar[i][j];
             }
         }
         return res;

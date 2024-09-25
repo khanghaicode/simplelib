@@ -1,6 +1,4 @@
-#include<bits/stdc++.h>
 #define bignum string
-using namespace std;
 int sosanh(bignum x,bignum y){
     while(x.size()<y.size())x="0"+x;
     while(x.size()>y.size())y="0"+y;
